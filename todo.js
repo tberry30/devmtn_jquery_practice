@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 	todoClearButton.on('click', function(){
 		$('.done').remove();
-	});
+	})
 
 
 	var handleAdd = function(){
@@ -39,13 +39,13 @@ $(document).ready(function(){
 		if (event.which == 13) {
 			handleAdd();
 		}
-	});
+	})
 
 	todoAddItemButton.on('click', handleAdd);
 
 	todoList.on('click', 'li', function(){
 		var todoItem = $(this);
 		todoItem.toggleClass('done');
-	});
+	})
 
 })
